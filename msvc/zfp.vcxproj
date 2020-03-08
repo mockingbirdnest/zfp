@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{0BE440B8-38D8-494F-B28D-F76B6062088A}</ProjectGuid>
+    <RootNamespace>zfp</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)zfp.props" />
+  <ItemGroup>
+    <ClInclude Include="..\include\bitstream.h" />
+    <ClInclude Include="..\include\zfp.h" />
+    <ClInclude Include="..\include\zfp\macros.h" />
+    <ClInclude Include="..\include\zfp\system.h" />
+    <ClInclude Include="..\include\zfp\types.h" />
+    <ClInclude Include="..\src\block1.h" />
+    <ClInclude Include="..\src\block2.h" />
+    <ClInclude Include="..\src\block3.h" />
+    <ClInclude Include="..\src\block4.h" />
+    <ClInclude Include="..\src\inline\inline.h" />
+    <ClInclude Include="..\src\template\codec.h" />
+    <ClInclude Include="..\src\template\template.h" />
+    <ClInclude Include="..\src\traitsd.h" />
+    <ClInclude Include="..\src\traitsf.h" />
+    <ClInclude Include="..\src\traitsi.h" />
+    <ClInclude Include="..\src\traitsl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\bitstream.c" />
+    <ClCompile Include="..\src\decode1d.c" />
+    <ClCompile Include="..\src\decode1f.c" />
+    <ClCompile Include="..\src\decode1i.c" />
+    <ClCompile Include="..\src\decode1l.c" />
+    <ClCompile Include="..\src\decode2d.c" />
+    <ClCompile Include="..\src\decode2f.c" />
+    <ClCompile Include="..\src\decode2i.c" />
+    <ClCompile Include="..\src\decode2l.c" />
+    <ClCompile Include="..\src\decode3d.c" />
+    <ClCompile Include="..\src\decode3f.c" />
+    <ClCompile Include="..\src\decode3i.c" />
+    <ClCompile Include="..\src\decode3l.c" />
+    <ClCompile Include="..\src\decode4d.c" />
+    <ClCompile Include="..\src\decode4f.c" />
+    <ClCompile Include="..\src\decode4i.c" />
+    <ClCompile Include="..\src\decode4l.c" />
+    <ClCompile Include="..\src\encode1d.c" />
+    <ClCompile Include="..\src\encode1f.c" />
+    <ClCompile Include="..\src\encode1i.c" />
+    <ClCompile Include="..\src\encode1l.c" />
+    <ClCompile Include="..\src\encode2d.c" />
+    <ClCompile Include="..\src\encode2f.c" />
+    <ClCompile Include="..\src\encode2i.c" />
+    <ClCompile Include="..\src\encode2l.c" />
+    <ClCompile Include="..\src\encode3d.c" />
+    <ClCompile Include="..\src\encode3f.c" />
+    <ClCompile Include="..\src\encode3i.c" />
+    <ClCompile Include="..\src\encode3l.c" />
+    <ClCompile Include="..\src\encode4d.c" />
+    <ClCompile Include="..\src\encode4f.c" />
+    <ClCompile Include="..\src\encode4i.c" />
+    <ClCompile Include="..\src\encode4l.c" />
+    <ClCompile Include="..\src\share\omp.c" />
+    <ClCompile Include="..\src\share\parallel.c" />
+    <ClCompile Include="..\src\zfp.c" />
+  </ItemGroup>
+</Project>
