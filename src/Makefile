@@ -14,7 +14,7 @@ clean:
 $(LIBDIR)/libzfp.a: $(OBJECTS)
 	mkdir -p $(LIBDIR)
 	rm -f $@
-	ar rc $@ $^
+	ar src $@ $^
 
 $(LIBDIR)/libzfp.so: $(OBJECTS)
 	mkdir -p $(LIBDIR)
