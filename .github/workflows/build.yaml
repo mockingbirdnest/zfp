@@ -33,5 +33,5 @@ jobs:
       uses: mockingbirdnest/actions/windows/upload_artifact@WF
       with:
         name: zfp
-        headers_directoryb: ${{ env.PRINCIPIA_HEADERS_ZFP }}
+        headers_directory: ${{ env.PRINCIPIA_HEADERS_ZFP }}
         solution_directory: ${{ env.PRINCIPIA_MSVC_ZFP }}
