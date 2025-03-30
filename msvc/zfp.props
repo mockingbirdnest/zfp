@@ -84,12 +84,14 @@
   <ItemDefinitionGroup Condition="!$(PrincipiaOptimize)">
     <ClCompile>
       <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link></Link>
   </ItemDefinitionGroup>
   <!--Release options.-->
   <PropertyGroup Condition="$(PrincipiaOptimize)">
     <UseDebugLibraries>false</UseDebugLibraries>
+    <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="$(PrincipiaOptimize)">
     <ClCompile>
