@@ -91,11 +91,11 @@
   <!--Release options.-->
   <PropertyGroup Condition="$(PrincipiaOptimize)">
     <UseDebugLibraries>false</UseDebugLibraries>
-    <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="$(PrincipiaOptimize)">
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
