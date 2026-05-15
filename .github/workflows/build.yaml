@@ -31,7 +31,7 @@ jobs:
       uses: mockingbirdnest/actions/windows/rebuild@main
       with:
         configuration: ${{ matrix.configuration }}
-        solution_glob: ${{ PRINCIPIA_SOLUTION_ZFP }}
+        solution_glob: ${{ env.PRINCIPIA_SOLUTION_ZFP }}
 
     - name: Upload artifact
       uses: mockingbirdnest/actions/windows/upload_artifact@main
