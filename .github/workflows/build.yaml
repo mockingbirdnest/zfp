@@ -10,6 +10,7 @@ on:
 env:
   PRINCIPIA_HEADERS_ZFP: include
   PRINCIPIA_MSVC_ZFP: msvc
+  PRINCIPIA_SOLUTION_ZFP: msvc/zfp.slnf
 
 jobs:
   build:
@@ -30,7 +31,7 @@ jobs:
       uses: mockingbirdnest/actions/windows/rebuild@main
       with:
         configuration: ${{ matrix.configuration }}
-        solution_directory: ${{ env.PRINCIPIA_MSVC_ZFP }}
+        solution_glob: ${{ PRINCIPIA_SOLUTION_ZFP }}
 
     - name: Upload artifact
       uses: mockingbirdnest/actions/windows/upload_artifact@main

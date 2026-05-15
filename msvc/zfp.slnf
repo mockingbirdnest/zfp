@@ -1,0 +1,8 @@
+{
+  "solution": {
+    "path": "zfp.sln",
+    "projects": [
+      "zfp.vcxproj"
+    ]
+  }
+}
